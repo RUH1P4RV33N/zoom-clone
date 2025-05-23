@@ -1,12 +1,14 @@
 import React, { Children, ReactNode } from 'react'
-
+import StreamVideoProvider from '@/providers/StreamClientProvider'
 function RootLayout({children}:{children:ReactNode}) {
   return (
     <div>
       <main>
-        {/* Navbar */}
+        <StreamVideoProvider>
         {children}
-        {/* Footer */}
+
+        </StreamVideoProvider>
+        
       </main>
     </div>
   )

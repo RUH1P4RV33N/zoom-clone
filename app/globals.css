@@ -9,6 +9,11 @@
   .flex-between{
     @apply flex justify-between items-center;
   }
+  .bg-hero {
+    background-image: url('/images/hero-background.png');
+    background-size: cover;
+    background-position: center;
+  }
 }
 @theme inline {
   --color-black-2: #1e1e2e;
@@ -61,8 +66,38 @@
 .bg-blue-1 {
   background-color: var(--color-blue-1);
 }
+.bg-sky-1
+{
+  background-color: var(--color-sky-1);
+}
+.bg-sky-2
+{
+  background-color: var(--color-sky-2);
+}
+.bg-sky-3
+{
+  background-color: var(--color-sky-3);
+}
+.bg-orange-1
+{
+  background-color: var(--color-orange-1);
+}
+.bg-purple-1
+{
+  background-color: var(--color-purple-1);
+}
+.bg-yellow-1
+{
+  background-color: var(--color-yellow-1);
+}
 
 :root {
+  --color-sky-1: #C9DDFF;
+  --color-sky-2: #ECF0FF;
+  --color-sky-3: #F5FCFF;
+  --color-orange-1: #FF742E;
+  --color-purple-1: #830EF9;
+  --color-yellow-1: #F9A90E;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -129,6 +164,17 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.glassmorphism2 {
+  background: rgba(18, 17, 17, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 @layer base {
